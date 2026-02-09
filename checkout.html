@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Drift &amp; Dine - Checkout</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container">
+        <div class="brandbar">
+          <div>
+            <h1 class="page-title">Checkout</h1>
+            <p class="lede">responsive template</p>
+          </div>
+
+          <div class="brand-chip" aria-label="Cart total">
+            <span class="brand-chip__label">Total</span>
+            <span class="brand-chip__name">$16</span>
+          </div>
+        </div>
+
+        <nav class="top-nav" aria-label="Primary">
+          <a href="index.html">Style Guide</a>
+          <a href="product-listing.html">Menu</a>
+          <a href="checkout.html" aria-current="page">Checkout</a>
+          <span class="top-nav__spacer" aria-hidden="true"></span>
+          <a href="index.html#citations">Citations</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="paper">
+      <div class="container">
+        <section class="section">
+          <header class="section__header">
+            <h2>Checkout</h2>
+            <p class="section__hint">Two columns on desktop, one column on mobile.</p>
+          </header>
+
+          <div class="checkout-layout">
+            <!-- cart -->
+            <section class="card checkout-card" aria-label="Cart">
+              <div class="card__head">
+                <h3>Your cart</h3>
+                <span class="tag">cart</span>
+              </div>
+
+              <ul class="cart">
+                <li class="cart__row">
+                  <div class="cart__item">
+                    <span class="cart__name">Midnight Wrap</span>
+                    <span class="cart__meta">Qty 1</span>
+                  </div>
+                  <span class="cart__price">$11.50</span>
+                </li>
+
+                <li class="cart__row">
+                  <div class="cart__item">
+                    <span class="cart__name">Cardamom Chai</span>
+                    <span class="cart__meta">Qty 1</span>
+                  </div>
+                  <span class="cart__price">$4.75</span>
+                </li>
+              </ul>
+
+              <div class="totals">
+                <div class="totals__row"><span>Subtotal</span><strong>$16.25</strong></div>
+                <div class="totals__row"><span>Delivery</span><span class="muted">Calculated at address</span></div>
+                <div class="totals__row totals__row--grand"><span>Estimated total</span><strong>$16.25</strong></div>
+              </div>
+
+              <div class="actions">
+                <a class="btn" href="product-listing.html">Add more items</a>
+              </div>
+            </section>
+            <!-- payment -->
+            <section class="card checkout-card" aria-label="Payment form">
+              <div class="card__head">
+                <h3>Payment</h3>
+                <span class="tag">form</span>
+              </div>
+
+              <form class="form" action="#" method="post">
+                <fieldset class="fieldset">
+                  <legend>Customer details</legend>
+
+                  <div class="field">
+                    <label for="full-name">Full name</label>
+                    <input id="full-name" name="full-name" type="text" placeholder="First Last" required />
+                  </div>
+
+                  <div class="field">
+                    <label for="phone">Phone</label>
+                    <input id="phone" name="phone" type="tel" placeholder="(+1) " required />
+                  </div>
+
+                  <div class="field">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="name@example.com" />
+                  </div>
+                </fieldset>
+
+                <fieldset class="fieldset">
+                  <legend>Fulfillment</legend>
+
+                  <label class="choice">
+                    <input type="radio" name="fulfillment" value="pickup" checked />
+                    Pickup <span class="muted">ready in 15 minutes</span>
+                  </label>
+
+                  <label class="choice">
+                    <input type="radio" name="fulfillment" value="delivery" />
+                    Delivery <span class="muted">address required</span>
+                  </label>
+
+                  <div class="field">
+                    <label for="address">Delivery address</label>
+                    <input id="address" name="address" type="text" placeholder="Street, unit, buzzer" />
+                  </div>
+                </fieldset>
+
+                <fieldset class="fieldset">
+                  <legend>Payment method</legend>
+
+                  <label class="choice">
+                    <input type="radio" name="pay" value="card" checked />
+                    Card
+                  </label>
+
+                  <label class="choice">
+                    <input type="radio" name="pay" value="cash" />
+                    Cash <span class="muted">pickup only</span>
+                  </label>
+
+                  <div class="field field--two">
+                    <div>
+                      <label for="card-num">Card number</label>
+                      <input id="card-num" name="card-num" type="text" inputmode="numeric" placeholder="1234 5678 9012 3456" />
+                    </div>
+
+                    <div>
+                      <label for="exp">Expiry</label>
+                      <input id="exp" name="exp" type="text" placeholder="MM/YY" />
+                    </div>
+
+                    <div>
+                      <label for="cvv">CVV</label>
+                      <input id="cvv" name="cvv" type="text" inputmode="numeric" placeholder="123" />
+                    </div>
+                  </div>
+                </fieldset>
+
+                <div class="actions actions--stack">
+                  <button class="btn btn--primary" type="submit">Confirm &amp; Pay</button>
+                  <button class="btn" type="reset">Reset</button>
+                </div>
+
+                <p class="help muted">
+                  This is a template 
+                </p>
+              </form>
+            </section>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h2 class="footer-title">Contact</h2>
+          <p class="footer-muted">Email: <a href="mailto:something@email.com">something@email.com</a></p>
+          <p class="footer-muted">Pickup: X, Vancouver</p>
+        </div>
+        <div>
+          <p class="footer-muted"><small>Template for P01</small></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
