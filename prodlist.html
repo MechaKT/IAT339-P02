@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Drift &amp; Dine - Menu</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container">
+        <div class="brandbar">
+          <div>
+            <h1 class="page-title">Drift &amp; Dine</h1>
+            <p class="lede">Late-night halal bites</p>
+          </div>
+
+          <div class="brand-chip" aria-label="Order status">
+            <span class="brand-chip__label">Status</span>
+            <span class="brand-chip__name">Open</span>
+          </div>
+        </div>
+        <nav class="top-nav" aria-label="Primary">
+          <a href="index.html">Style Guide</a>
+          <a href="product-listing.html" aria-current="page">Menu</a>
+          <a href="checkout.html">Checkout</a>
+          <span class="top-nav__spacer" aria-hidden="true"></span>
+          <a href="index.html#citations">Citations</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="paper">
+      <div class="container">
+        <section class="section">
+          <header class="section__header">
+            <h2>Menu</h2>
+            <p class="section__hint">Responsive listing template with navigation + multiple products.</p>
+          </header>
+          <nav class="sub-nav" aria-label="Menu sections">
+            <a href="#featured">Featured</a>
+            <a href="#all-items">All items</a>
+            <a href="#updates">Updates</a>
+          </nav>
+          <!-- feature -->
+          <section class="feature" id="featured" aria-label="Featured item">
+            <div class="feature__media">
+              <img src="img/featured-wrap.jpg" alt="Featured: Midnight Wrap" />
+            </div>
+
+            <div class="feature__body">
+              <h3 class="feature__title">Midnight Wrap</h3>
+              <p class="feature__copy">
+                Built for late-night cravings and quick study breaks. Warm, consistent, and fast.
+              </p>
+
+              <div class="price-row">
+                <span class="price">$11.50</span>
+                <span class="pill">15–20 min</span>
+                <span class="pill pill--mint">halal</span>
+              </div>
+
+              <div class="actions">
+                <a class="btn btn--primary" href="checkout.html">Order now</a>
+                <a class="btn" href="#all-items">Browse all</a>
+              </div>
+            </div>
+          </section>
+          <!-- all items -->
+          <section class="section" id="all-items" aria-label="All menu items">
+            <header class="section__header">
+              <h2>All items</h2>
+              <p class="section__hint">Grid adapts from 1 → 2 → 3 columns based on screen width.</p>
+            </header>
+
+            <div class="product-grid">
+              <article class="product-card">
+                <a class="product-card__media" href="checkout.html" aria-label="Add Midnight Wrap">
+                  <img src="img/featured-wrap.jpg" alt="Midnight Wrap" />
+                </a>
+                <div class="product-card__body">
+                  <h3 class="product-card__title">Midnight Wrap</h3>
+                  <p class="product-card__desc">Warm wrap with a clean, filling bite.</p>
+                  <div class="product-card__meta">
+                    <span class="price">$11.50</span>
+                    <a class="pill-link" href="checkout.html">Add</a>
+                  </div>
+                </div>
+              </article>
+              <article class="product-card">
+                <a class="product-card__media" href="checkout.html" aria-label="Add Street Bowl ">
+                  <img src="img/street-bowl.jpg" alt="Street Bowl" />
+                </a>
+                <div class="product-card__body">
+                  <h3 class="product-card__title">Street Bowl</h3>
+                  <p class="product-card__desc">A filling bowl designed to keep you going.</p>
+                  <div class="product-card__meta">
+                    <span class="price">$13.25</span>
+                    <a class="pill-link" href="checkout.html">Add</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="product-card">
+                <a class="product-card__media" href="checkout.html" aria-label="Add Cardamom Chai">
+                  <img src="img/chai.jpg" alt="Cardamom Chai" />
+                </a>
+                <div class="product-card__body">
+                  <h3 class="product-card__title">Cardamom Chai</h3>
+                  <p class="product-card__desc">Warm, sweet, and best paired with rain + assignments.</p>
+                  <div class="product-card__meta">
+                    <span class="price">$4.75</span>
+                    <a class="pill-link" href="checkout.html">Add</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="product-card">
+                <a class="product-card__media" href="#updates" aria-label="See updates">
+                  <div class="placeholder-media" aria-hidden="true">+</div>
+                </a>
+                <div class="product-card__body">
+                  <h3 class="product-card__title">Smoky Lentil Bowl</h3>
+                  <p class="product-card__desc">Limited run test menu item.</p>
+                  <div class="product-card__meta">
+                    <span class="price">$12.50</span>
+                    <a class="pill-link" href="checkout.html">Add</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <!-- update -->
+          <section class="section" id="updates" aria-label="Updates">
+            <header class="section__header">
+              <h2>Updates</h2>
+              <p class="section__hint">Content hint for P02</p>
+            </header>
+
+            <div class="notice">
+              <p><strong>Jan 20:</strong>  open until 2AM for late-night pickup</p>
+              <p><strong>Jan 27:</strong>Smoky Lentil Bowl </p>
+            </div>
+          </section>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h2 class="footer-title">Contact</h2>
+          <p class="footer-muted">Email: <a href="mailto:something@email.com">something@email.com</a></p>
+          <p class="footer-muted">Pickup: X, Vancouver</p>
+        </div>
+        <div>
+          <p class="footer-muted"><small>Template for P01</small></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
