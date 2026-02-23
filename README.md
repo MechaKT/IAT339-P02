@@ -12,3 +12,6 @@
 
 # V0.51
 # Edited certain header names and texts to better match the rest of the site.
+
+# V0.6
+# Added about me page, made minor tweaks to some headings
