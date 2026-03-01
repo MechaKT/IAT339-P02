@@ -6,57 +6,58 @@
     <title>Drift &amp; Dine - Menu</title>
     <link rel="stylesheet" href="css/main.css" />
   </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header">
-      <div class="container">
-        <div class="brandbar">
-          <div>
-            <h1 class="page-title">Drift &amp; Dine</h1>
-            <p class="lede">Late-night halal bites</p>
-          </div>
 
-          <div class="brand-chip" aria-label="Order status">
-            <span class="brand-chip__label">Status</span>
-            <span class="brand-chip__name">Open</span>
-          </div>
-        </div>
-        <nav class="top-nav" aria-label="Primary">
-          <a href="index.html">Style Guide</a>
-          <a href="prodlist.html" aria-current="page">Menu</a>
-          <a href="checkout.html">Checkout</a>
-          <a href="about.html">About</a>
-          <span class="top-nav__spacer" aria-hidden="true"></span>
-          <a href="index.html#citations">Citations</a>
+  <body class="site">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="noticebar" role="region" aria-label="Announcement">
+      <div class="container noticebar__inner">
+        <p class="noticebar__text"><strong>Open:</strong> late-night pickup daily</p>
+        <a class="noticebar__link" href="checkout.html">Checkout </a>
+      </div>
+    </div>
+
+    <header class="header header--overlay">
+      <div class="container header__row">
+        <a class="brand" href="index.html" aria-label="Drift &amp; Dine home">
+          <span class="brand__mark" aria-hidden="true">D&amp;D</span>
+          <span class="brand__text">
+            <span class="brand__name">Drift &amp; Dine</span>
+            <span class="brand__tag">Menu</span>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <a class="nav__link" href="prodlist.html" aria-current="page">Menu</a>
+          <a class="nav__link nav__link--cta" href="checkout.html">Checkout</a>
         </nav>
       </div>
     </header>
 
-    <main id="main" class="paper">
-      <div class="container">
-        <section class="section">
-          <header class="section__header">
-            <h2>Menu</h2>
-            <p class="section__hint">Responsive listing template with navigation</p>
+    <main id="main">
+      <section class="section" aria-label="Menu page">
+        <div class="container">
+          <header class="section__head section__head--row">
+            <h1 class="h1">Menu</h1>
+            <p class="section__hint">Responsive listing </p>
           </header>
-          <nav class="sub-nav" aria-label="Menu sections">
-            <a href="#featured">Featured</a>
-            <a href="#all-items">All items</a>
-            <a href="#updates">Updates</a>
+
+          <nav class="subnav" aria-label="Menu sections">
+            <a class="subnav__link" href="#featured">Featured</a>
+            <a class="subnav__link" href="#all-items">All items</a>
+            <a class="subnav__link" href="#updates">Updates</a>
           </nav>
-          <!-- fture -->
+
           <section class="feature" id="featured" aria-label="Featured item">
             <div class="feature__media">
-              <img src="img/featured-wrap.jpg" alt="Featured: Midnight Wrap" />
+              <img src="img/featured-wrap.jpg" alt="Featured: Midnight Wrap" loading="lazy" />
             </div>
 
             <div class="feature__body">
-              <h3 class="feature__title">Midnight Wrap</h3>
-              <p class="feature__copy">
-                Built for late-night cravings and quick study breaks. Warm, consistent, and fast.
-              </p>
+              <h2 class="feature__title">Midnight Wrap</h2>
+              <p class="feature__copy">Built warm </p>
 
-              <div class="price-row">
+              <div class="feature__meta">
                 <span class="price">$11.50</span>
                 <span class="pill">15–20 min</span>
                 <span class="pill pill--mint">halal</span>
@@ -64,101 +65,115 @@
 
               <div class="actions">
                 <a class="btn btn--primary" href="checkout.html">Order now</a>
-                <a class="btn" href="#all-items">Browse all</a>
+                <a class="btn btn--ghost" href="#all-items">Browse all</a>
               </div>
             </div>
           </section>
-          <!-- items -->
+
           <section class="section" id="all-items" aria-label="All menu items">
-            <header class="section__header">
-              <h2>All items</h2>
-              <p class="section__hint">Grid adapts from 1 → 2 → 3 columns based on screen width.</p>
+            <header class="section__head">
+              <h2 class="section__title">All items</h2>
+              <p class="section__hint">Grid adapts 1 → 2 → 3 columns based on screen width</p>
             </header>
 
             <div class="product-grid">
-              <article class="product-card">
-                <a class="product-card__media" href="checkout.html" aria-label="Add Midnight Wrap">
-                  <img src="img/featured-wrap.jpg" alt="Midnight Wrap" />
+              <article class="product" aria-label="Midnight Wrap">
+                <a class="product__media" href="checkout.html" aria-label="Add Midnight Wrap">
+                  <img src="img/featured-wrap.jpg" alt="Midnight Wrap" loading="lazy" />
                 </a>
-                <div class="product-card__body">
-                  <h3 class="product-card__title">Midnight Wrap</h3>
-                  <p class="product-card__desc">Warm wrap with a clean, filling bite.</p>
-                  <div class="product-card__meta">
+                <div class="product__body">
+                  <h3 class="product__title">Midnight Wrap</h3>
+                  <p class="product__desc">Warm wrap</p>
+                  <div class="product__row">
                     <span class="price">$11.50</span>
-                    <a class="pill-link" href="checkout.html">Add</a>
+                    <a class="pilllink" href="checkout.html">Add</a>
                   </div>
                 </div>
               </article>
-              <article class="product-card">
-                <a class="product-card__media" href="checkout.html" aria-label="Add Street Bowl ">
-                  <img src="img/street-bowl.jpg" alt="Street Bowl" />
+
+              <article class="product" aria-label="Street Bowl">
+                <a class="product__media" href="checkout.html" aria-label="Add Street Bowl">
+                  <img src="img/street-bowl.jpg" alt="Street Bowl" loading="lazy" />
                 </a>
-                <div class="product-card__body">
-                  <h3 class="product-card__title">Street Bowl</h3>
-                  <p class="product-card__desc">A filling bowl designed to keep you going.</p>
-                  <div class="product-card__meta">
+                <div class="product__body">
+                  <h3 class="product__title">Street Bowl</h3>
+                  <p class="product__desc">A filling bowl</p>
+                  <div class="product__row">
                     <span class="price">$13.25</span>
-                    <a class="pill-link" href="checkout.html">Add</a>
+                    <a class="pilllink" href="checkout.html">Add</a>
                   </div>
                 </div>
               </article>
 
-              <article class="product-card">
-                <a class="product-card__media" href="checkout.html" aria-label="Add Cardamom Chai">
-                  <img src="img/chai.jpg" alt="Cardamom Chai" />
+              <article class="product" aria-label="Cardamom Chai">
+                <a class="product__media" href="checkout.html" aria-label="Add Cardamom Chai">
+                  <img src="img/chai.jpg" alt="Cardamom Chai" loading="lazy" />
                 </a>
-                <div class="product-card__body">
-                  <h3 class="product-card__title">Cardamom Chai</h3>
-                  <p class="product-card__desc">Warm, sweet, and best paired with rain + assignments.</p>
-                  <div class="product-card__meta">
+                <div class="product__body">
+                  <h3 class="product__title">Cardamom Chai</h3>
+                  <p class="product__desc">Warm, sweet</p>
+                  <div class="product__row">
                     <span class="price">$4.75</span>
-                    <a class="pill-link" href="checkout.html">Add</a>
+                    <a class="pilllink" href="checkout.html">Add</a>
                   </div>
                 </div>
               </article>
 
-              <article class="product-card">
-                <a class="product-card__media" href="#updates" aria-label="See updates">
-                  <div class="placeholder-media" aria-hidden="true">+</div>
+              <article class="product" aria-label="Smoky Lentil Bowl">
+                <a class="product__media" href="#updates" aria-label="See updates">
+                  <div class="placeholder" aria-hidden="true">+</div>
                 </a>
-                <div class="product-card__body">
-                  <h3 class="product-card__title">Smoky Lentil Bowl</h3>
-                  <p class="product-card__desc">Limited run test menu item.</p>
-                  <div class="product-card__meta">
+                <div class="product__body">
+                  <h3 class="product__title">Smoky Lentil Bowl</h3>
+                  <p class="product__desc">Limited run</p>
+                  <div class="product__row">
                     <span class="price">$12.50</span>
-                    <a class="pill-link" href="checkout.html">Add</a>
+                    <a class="pilllink" href="checkout.html">Add</a>
                   </div>
                 </div>
               </article>
             </div>
           </section>
 
-          <!-- update later -->
           <section class="section" id="updates" aria-label="Updates">
-            <header class="section__header">
-              <h2>Updates</h2>
-              <p class="section__hint">Content hint for P02</p>
+            <header class="section__head">
+              <h2 class="section__title">Updates</h2>
+              <p class="section__hint">Content hint P02</p>
             </header>
 
             <div class="notice">
-              <p><strong>Jan 20:</strong>  open until 2AM for late-night pickup</p>
-              <p><strong>Jan 27:</strong>Smoky Lentil Bowl </p>
+              <p><strong>Jan 20:</strong> Open until 2AM for late-night pickup</p>
+              <p><strong>Jan 27:</strong> Smoky Lentil Bowl</p>
             </div>
           </section>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="container footer-grid">
-        <div>
-          <h2 class="footer-title">Contact</h2>
-          <p class="footer-muted">Email: <a href="mailto:something@email.com">something@email.com</a></p>
-          <p class="footer-muted">Pickup: X, Vancouver</p>
+    <footer class="footer" aria-label="Site footer">
+      <div class="container footer__grid">
+        <div class="footer__brand">
+          <p class="footer__logo">Drift &amp; Dine</p>
+          <p class="footer__muted">Email: <a href="mailto:something@email.com">something@email.com</a></p>
+          <p class="footer__muted">Pickup: X, Vancouver</p>
         </div>
-        <div>
-          <p class="footer-muted"><small>Template for P01</small></p>
+
+        <nav class="footer__col" aria-label="Site links">
+          <h2 class="footer__title">Site links</h2>
+          <a href="index.html">Home</a>
+          <a href="checkout.html">Checkout</a>
+          <a href="about.html">About</a>
+        </nav>
+
+        <div class="footer__col" aria-label="References">
+          <h2 class="footer__title">References</h2>
+          <a href="styleguide.html"> Style Guide</a>
+          <a href="styleguide.html#citations">Citations</a>
         </div>
+      </div>
+
+      <div class="container footer__bar" aria-label="Footer legal">
+        <p class="footer__muted"><small>© 2026 Drift &amp; Dine</small></p>
       </div>
     </footer>
   </body>

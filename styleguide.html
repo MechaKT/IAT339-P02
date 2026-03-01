@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>P01 - Consolidated Style Guide</title>
+    <link href="css/styleguide.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <h1>P01 Style Guide</h1>
+      <p>
+        This document collects the required HTML elements for a style guide, plus the brand direction for
+        a small Vancouver-based “late night halal bites” brand: <strong>Drift &amp; Dine</strong>.
+      </p>
+
+     
+
+        <span class="nav-divider" aria-hidden="true">•</span>
+
+        <a href="#interactive_elements">Interactive</a>
+        <a href="#text_elements">Text</a>
+        <a href="#combined_elements">Combined</a>
+        <a href="#branding">Branding</a>
+        <a href="#brand_components">Brand Components</a>
+        <a href="#citations">Citations</a>
+      </nav>
+
+      <hr />
+    </header>
+
+    <main>
+      <!-- interactions added -->
+      <section id="interactive_elements">
+        <h2>Interactive Elements</h2>
+
+        <section class="element">
+          <h3>In-text Link</h3>
+          <p>
+            Example sentence that feels “real”: <a href="#hours">pickup hours</a>
+          </p>
+
+          <h4>Sample code:</h4>
+          <pre><code>&lt;p&gt;Our &lt;a href="#hours"&gt;pickup hours&lt;/a&gt; change during exam season.&lt;/p&gt;</code></pre>
+        </section>
+
+        <section class="element">
+          <h3>In-text Link</h3>
+          <p>
+            Follow us on <a href="https://www.instagram.com/">Instagram</a>, <a href="https://x.com/">X</a>,
+            and <a href="https://www.facebook.com/">Facebook</a> for updates.
+          </p>
+
+          <h4>Sample code:</h4>
+          <pre><code>&lt;p&gt;Follow us on
+  &lt;a href="https://www.instagram.com/"&gt;Instagram&lt;/a&gt;,
+  &lt;a href="https://x.com/"&gt;X&lt;/a&gt;,
+  and &lt;a href="https://www.facebook.com/"&gt;Facebook&lt;/a&gt; for updates.
+&lt;/p&gt;</code></pre>
+        </section>
+
+        <section class="element">
+          <h3>Navigation Link</h3>
+
+          <h4>Sample code:</h4>
+          <pre><code>&lt;a class="nav-link" href="#menu"&gt;Menu&lt;/a&gt;</code></pre>
+
+          <h4>Rendered element:</h4>
+          <a class="nav-link" href="#menu">Menu</a>
+        </section>
+
+        <section class="element">
+          <h3>Submit / Reset Buttons</h3>
+          <p>Used for confirming an order or clearing the form.</p>
+
+          <h4>Sample code:</h4>
+          <pre><code>&lt;form action="#" method="post"&gt;
+  &lt;button type="submit"&gt;Place order&lt;/button&gt;
+  &lt;button type="reset"&gt;Clear form&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+
+          <h4>Rendered element:</h4>
+          <form action="#" method="post">
+            <button type="submit">Place order</button>
+            <button type="reset">Clear form</button>
+          </form>
+        </section>
+
+        <section class="element">
+          <h3>Text Input Field with Label</h3>
+          <p>Used for order notes like “no onions” or “extra spicy”.</p>
+
+          <h4>Sample code:</h4>
+          <pre><code>&lt;label for="order-notes"&gt;Order notes&lt;/label&gt;
+&lt;input id="order-notes" name="order-notes" type="text"
+  placeholder="e.g., no onions, extra spicy" /&gt;</code></pre>
+
+          <h4>Rendered element:</h4>
+          <div>
+            <label for="order-notes">Order notes</label>
+            <input
+              id="order-notes"
+              name="order-notes"
+              type="text"
+              placeholder="e.g., no onions, extra spicy"
+            />
+          </div>
+        </section>
+
+        <section class="element">
+          <h3>Radio Button Input with Label</h3>
+          <p>How the customer wants to receive their food.</p>
+
+          <h4>Sample code:</h4>
+          <pre><code>&lt;fieldset&gt;
+  &lt;legend&gt;Fulfillment&lt;/legend&gt;
+  &lt;label&gt;&lt;input type="radio" name="fulfillment" value="pickup" /&gt; Pickup&lt;/label&gt;
+  &lt;label&gt;&lt;input type="radio" name="fulfillment" value="delivery" /&gt; Delivery&lt;/label&gt;
+&lt;/fieldset&gt;</code></pre>
+
+          <h4>Rendered element:</h4>
+          <fieldset>
+            <legend>Fulfillment</legend>
+            <label>
+              <input type="radio" name="fulfillment" value="pickup" />
+              Pickup
+            </label>
+            <label>
+              <input type="radio" name="fulfillment" value="delivery" />
+              Delivery
+            </label>
+          </fieldset>
+        </section>
+
+        <section class="element">
+          <h3>Image as a Link</h3>
+          <p>Featured item detail.</p>
+
+          <h4>Sample code:</h4>
+          <pre><code>&lt;a href="#product_detail"&gt;
+  &lt;img src="img/featured-wrap.jpg" alt="Featured: Midnight Wrap" width="280" /&gt;
+&lt;/a&gt;</code></pre>
+
+          <h4>Rendered element:</h4>
+          <a href="#product_detail">
+            <img src="img/featured-wrap.jpg" alt="Featured: Midnight Wrap" width="280" />
+          </a>
+
+          <p class="note"><em>Note:</em> Make sure <code>img/featured-wrap.jpg</code> exists in your project.</p>
+        </section>
+      </section>
+
+      <hr />
+
+      <!-- textelements -->
+      <section id="text_elements">
+        <h2>Text Elements</h2>
+
+        <section class="element">
+          <h3>Four Levels of Headings</h3>
+
+          <h4>Sample code:</h4>
+          <pre><code>&lt;h1&gt;Drift &amp; Dine&lt;/h1&gt;
+&lt;h2&gt;Late-night halal bites&lt;/h2&gt;
+&lt;h3&gt;Featured items&lt;/h3&gt;
+&lt;h4&gt;Ingredient note&lt;/h4&gt;</code></pre>
+
+          <h4>Rendered element:</h4>
+          <div class="type-demo" aria-label="Heading examples">
+            <h1>Drift &amp; Dine</h1>
+            <h2>Late-night halal bites</h2>
+            <h3>Featured items</h3>
+            <h4>Ingredient note</h4>
+          </div>
+        </section>
+
+        <section class="element">
+          <h3>Paragraph</h3>
+
+          <h4>Sample code:</h4>
+          <pre><code>&lt;p&gt;Warm wraps, loaded bowls, and sweet chai- fast pickup, chill delivery.&lt;/p&gt;</code></pre>
+
+          <h4>Rendered element:</h4>
+          <p>Warm wraps, loaded bowls, and sweet chai- fast pickup, chill delivery.</p>
+        </section>
+
+        <section class="element">
+          <h3>Numbered List</h3>
+          <p>A simple ordering flow for the company.</p>
+
+          <h4>Sample code:</h4>
+          <pre><code>&lt;ol&gt;
+  &lt;li&gt;Pick pickup or delivery.&lt;/li&gt;
+  &lt;li&gt;Choose your wrap or bowl.&lt;/li&gt;
+  &lt;li&gt;Add notes&lt;/li&gt;
+  &lt;li&gt;Pay and confirm.&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+
+          <h4>Rendered element:</h4>
+          <ol>
+            <li>Pick pickup or delivery.</li>
+            <li>Choose your wrap or bowl.</li>
+            <li>Add notes</li>
+            <li>Pay and confirm.</li>
+          </ol>
+        </section>
+      </section>
+
+      <hr />
+
+      <!-- combined  -->
+      <section id="combined_elements">
+        <h2>Combined Elements</h2>
+
+        <section class="element">
+          <h3>Main Navigation</h3>
+
+          <h4>Sample code:</h4>
+          <pre><code>&lt;nav aria-label="Main navigation"&gt;
+  &lt;a href="prodlist.html"&gt;Menu&lt;/a&gt;
+  &lt;a href="#updates"&gt;Updates&lt;/a&gt;
+  &lt;a href="#about"&gt;About&lt;/a&gt;
+  &lt;a href="#contact"&gt;Contact&lt;/a&gt;
+&lt;/nav&gt;</code></pre>
+
+          <h4>Rendered element:</h4>
+          <nav aria-label="Main navigation">
+            <a href="prodlist.html">Menu</a>
+            <a href="#updates">Updates</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </section>
+
+        <section class="element" id="menu">
+          <h3>Product / Service Listing</h3>
+          <p>This is a preview block. The full template lives in <a href="prodlist.html">prodlist.html</a>.</p>
+
+          <section class="menu-grid" aria-label="Menu items">
+            <article class="menu-card">
+              <h4>Midnight Wrap</h4>
+              <a href="#product_detail">
+                <img src="img/featured-wrap.jpg" alt="Midnight Wrap photo" width="280" />
+              </a>
+              <p class="price"><strong>$11.50</strong></p>
+              <p><a href="#product_detail">View details</a></p>
+            </article>
+
+            <article class="menu-card">
+              <h4>Street Bowl</h4>
+              <a href="#street_bowl_detail">
+                <img src="img/street-bowl.jpg" alt="Street Bowl photo" width="280" />
+              </a>
+              <p class="price"><strong>$13.25</strong></p>
+              <p><a href="#street_bowl_detail">View details</a></p>
+            </article>
+
+            <article class="menu-card">
+              <h4>Cardamom Chai</h4>
+              <a href="#chai_detail">
+                <img src="img/chai.jpg" alt="Cardamom chai photo" width="280" />
+              </a>
+              <p class="price"><strong>$4.75</strong></p>
+              <p><a href="#chai_detail">View details</a></p>
+            </article>
+          </section>
+
+          <p class="note">
+            <em>Note:</em> ensure these exist in <code>img/</code>:
+            <code>featured-wrap.jpg</code>, <code>street-bowl.jpg</code>, <code>chai.jpg</code>.
+          </p>
+        </section>
+
+        <section class="element">
+          <h3>Checkout Cart Preview</h3>
+          <p>Preview block full template lives in <a href="checkout.html">checkout.html</a>.</p>
+
+          <section aria-label="Cart">
+            <h4>Your cart</h4>
+            <ul>
+              <li><span>Midnight Wrap</span> - <span>$11.50</span></li>
+              <li><span>Cardamom Chai</span> - <span>$4.75</span></li>
+            </ul>
+
+            <p><strong>Subtotal:</strong> $16.25</p>
+            <p><strong>Estimated total:</strong> $16.25</p>
+          </section>
+        </section>
+
+        <section class="element">
+          <h3>Payment Form </h3>
+          <p>This form matches a real checkout pattern </p>
+
+          <h4>Rendered element:</h4>
+          <form action="#" method="post" aria-label="Payment form">
+            <fieldset>
+              <legend>Customer details</legend>
+
+              <label for="full-name">Full name</label>
+              <input id="full-name" name="full-name" type="text" placeholder="First Last" />
+
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel" placeholder="(+1)" />
+            </fieldset>
+
+            <fieldset>
+              <legend>Fulfillment</legend>
+
+              <label>
+                <input type="radio" name="fulfillment2" value="pickup" />
+                Pickup
+              </label>
+
+              <label>
+                <input type="radio" name="fulfillment2" value="delivery" />
+                Delivery
+              </label>
+            </fieldset>
+
+            <fieldset>
+              <legend>Payment method</legend>
+
+              <label>
+                <input type="radio" name="pay" value="card" />
+                Card
+              </label>
+
+              <label>
+                <input type="radio" name="pay" value="cash" />
+                Cash
+              </label>
+
+              <div class="pay-fields" aria-label="Card fields">
+                <label for="card-num">Card number</label>
+                <input id="card-num" name="card-num" type="text" placeholder="1234 5678 9012 3456" />
+
+                <label for="card-exp">Expiry</label>
+                <input id="card-exp" name="card-exp" type="text" placeholder="MM/YY" />
+
+                <label for="card-cvv">CVV</label>
+                <input id="card-cvv" name="card-cvv" type="text" placeholder="123" />
+              </div>
+            </fieldset>
+
+            <div class="button-row">
+              <button type="submit">Confirm &amp; Pay</button>
+              <button type="reset">Reset</button>
+            </div>
+          </form>
+        </section>
+       <section class="element" id="product_detail">
+          <h3>One Product Detailed View</h3>
+          <article>
+            <h4>Midnight Wrap</h4>
+            <img src="img/featured-wrap.jpg" alt="Midnight Wrap photo" width="320" />
+            <p><strong>$11.50</strong></p>
+            <p>Built for late-night cravings and quick study breaks.</p>
+
+            <h4>Spice level</h4>
+            <ol>
+              <li>Mild</li>
+              <li>Medium</li>
+              <li>Hot</li>
+            </ol>
+
+            <p><a href="#menu">Back to menu</a></p>
+          </article>
+        </section>
+
+        <section class="element" id="street_bowl_detail">
+          <h3>One Product Detailed View</h3>
+          <article>
+            <h4>Street Bowl</h4>
+            <img src="img/street-bowl.jpg" alt="Street Bowl photo" width="320" />
+            <p><strong>$13.25</strong></p>
+            <p>A filling bowl designed to keep you going.</p>
+            <p><a href="#menu">Back to menu</a></p>
+          </article>
+        </section>
+
+        <section class="element" id="chai_detail">
+          <h3>One Product Detailed View</h3>
+          <article>
+            <h4>Cardamom Chai</h4>
+            <img src="img/chai.jpg" alt="Cardamom chai photo" width="320" />
+            <p><strong>$4.75</strong></p>
+            <p>Best paired with a wrap when it’s raining and you’re grinding assignments.</p>
+            <p><a href="#menu">Back to menu</a></p>
+          </article>
+        </section>
+      </section>
+
+      <hr />
+
+      <!-- brandin -->
+      <section id="branding">
+        <h2>Basic Branding Ideas</h2>
+
+        <section class="element" id="about">
+          <h3>What does the company do / offer?</h3>
+          <p>Drift &amp; Dine is a small halal late-night food spot: warm wraps, bowls, and chai.</p>
+        </section>
+
+        <section class="element">
+          <h3>Who is the company?</h3>
+          <p>A calm, slightly funny friend who always has snacks in their bag.</p>
+        </section>
+
+        <section class="element">
+          <h3>Why might someone buy from this company?</h3>
+          <p>Small menu, consistent quality, simple ordering, and late-night hours that match student life.</p>
+        </section>
+
+        <section class="element" id="updates">
+          <h3>Company Updates-content hint for P02</h3>
+          <ul>
+            <li><strong>Jan 20:</strong> open until 2AM for late night pickup</li>
+            <li><strong>Jan 27:</strong> New menu test 'Smoky Lentil Bowl limited run</li>
+          </ul>
+        </section>
+
+        <section class="element" id="hours">
+          <h3>Pickup Hours anchor</h3>
+          <p>
+            <strong>Mon–Thu:</strong> 6PM–1AM • <strong>Fri–Sat:</strong> 6PM–2AM • <strong>Sun:</strong> 6PM–12AM
+          </p>
+        </section>
+      </section>
+
+      <hr />
+
+      <!-- Brand comp -->
+      <section id="brand_components">
+        <h2>Brand Components</h2>
+
+        <section class="element">
+          <h3>Fonts</h3>
+          <ul>
+            <li><strong>Primary:</strong> Open Sans-body, UI labels</li>
+            <li><strong>Secondary:</strong> Open Sans Bold-headings</li>
+            <li><strong>System note:</strong> headings are tight body is roomy &amp; readable at night</li>
+          </ul>
+        </section>
+
+<section class="element">
+  <h3>Colour palettes</h3>
+  <p>palette images as the source-of-truth for colour decisions</p>
+
+  <div class="palette-grid" aria-label="Colour palette images">
+    <figure class="palette-card">
+      <img src="img/blue.png" alt="Blue palette with 5 vertical colour bars." />
+      <figcaption>
+        <strong> palette Blues:</strong> buttons, links, UI accents
+      </figcaption>
+    </figure>
+
+    <figure class="palette-card">
+      <img src="img/gray.png" alt="Gray palette with 4 vertical neutral bars." />
+      <figcaption>
+        <strong> palette Grays:</strong> backgrounds, maybe more changes later typography support
+      </figcaption>
+    </figure>
+  </div>
+
+  <p class="note">
+    <em>How they fit:</em> Grays build the 'structure' readability & hierarchy, blues handle emphasis 
+  </p>
+</section>
+
+
+        <section class="element">
+          <h3>Imagery + intended applications</h3>
+          <p>Imagery samples are grouped together</p>
+
+          <div class="image-stack" aria-label="Imagery examples">
+            <figure class="img-block">
+              <img src="img/featured-wrap.jpg" alt="Warm close-up food photo of a wrap" />
+              <figcaption><strong>Food photo:</strong> primary listing + detail pages. Cropped tight, minimal background.</figcaption>
+            </figure>
+
+            <figure class="img-block">
+              <img src="img/street-bowl.jpg" alt="Warm close-up food photo of a bowl" />
+              <figcaption><strong>Food photo:</strong> keeps the grid consistent; lighting stays warm across products.</figcaption>
+            </figure>
+
+            <figure class="img-block">
+              <img src="img/chai.jpg" alt="Warm close-up photo of chai" />
+              <figcaption><strong>Small item photo:</strong> supports add-ons; works well in cart + checkout summaries.</figcaption>
+            </figure>
+          </div>
+
+          <div class="icon-notes" aria-label="Icon direction notes">
+            <p><strong>Icon direction-</strong> simple line icons, rounded ends, 1.5–2px stroke.</p>
+            <p><strong>Where used:</strong> navigation labels, checkout “steps”, small badges (Halal, Spice, Pickup).</p>
+          </div>
+        </section>
+
+        <section class="element">
+          <h3>How the components fit together</h3>
+          <p>This shows type + colour + interaction together.</p>
+
+          <div class="brand-preview" aria-label="Brand preview">
+            <div class="preview-head">
+              <p class="preview-kicker">Drift &amp; Dine</p>
+              <h4 class="preview-title">Late-night halal bites</h4>
+              <p class="preview-body">
+                Warm wraps, sweet chai designed for quick pickup and easy checkout
+                See <a href="#menu">menu</a> or jump to <a href="checkout.html">checkout</a>.
+              </p>
+            </div>
+
+            <div class="preview-actions">
+              <button type="button">Primary action</button>
+              <a class="ghost-link" href="#hours">Secondary link</a>
+              <span class="badge badge-spice">Spice</span>
+              <span class="badge badge-info">Pickup</span>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <hr />
+
+      <!-- cite -->
+      <section id="citations">
+        <h2>Citations</h2>
+        <ul>
+          <li>
+            Matteson, Steve. Designer. 2011. <strong>Open Sans</strong>. Retrieved from
+            <a href="https://fonts.google.com/specimen/Open+Sans">https://fonts.google.com/specimen/Open+Sans</a>
+          </li>
+          <li>
+            BBC Food. (2022). <strong>Featured wrap photo </strong>. Retrieved from
+            <a href="https://www.bbc.co.uk/food/collections/food_to_fuel_exercise">https://www.bbc.co.uk/food/collections/food_to_fuel_exercise</a>
+          </li>
+          <li>
+            Maison Marmite. (n.d.). <strong>Street bowl photo </strong>. Retrieved from
+            <a href="https://maisonmarmite.com/en/recipe/tokyo-street-bowl/">https://maisonmarmite.com/en/recipe/tokyo-street-bowl/</a>
+          </li>
+          <li>
+            Olive Magazine. (n.d.). <strong>Chai photo </strong>. Retrieved from
+            <a href="https://www.olivemagazine.com/recipes/cocktails-and-drinks/karak-chai/">https://www.olivemagazine.com/recipes/cocktails-and-drinks/karak-chai/</a>
+          </li>
+          
+          <li>
+            Pinterest. <strong>Grey Pallete </strong>. Retrieved from
+            <a href="https://www.pinterest.com/pin/322711129570388373/">https://www.pinterest.com/pin/322711129570388373/</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:something@email.com">something@email.com</a></p>
+      <p>Pickup: X, Vancouver</p>
+      <p><small>Consolidated P01 style guide. Template pages are linked above.</small></p>
+    </footer>
+  </body>
+</html>
