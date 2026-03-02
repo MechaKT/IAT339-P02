@@ -261,11 +261,19 @@ a{
 .hero__bg{
   position: absolute;
   inset: 0;
-  background: url("../img/room1.jpg") center/cover no-repeat;
+  background: url("../img/food-cart.jpg") center/cover no-repeat;
   filter: saturate(0.95) contrast(1.05);
 }
 .hero__bg--about{
-  background: url("../img/hotel.jfif") center/cover no-repeat;
+  background: url("../img/kitchen.jpg") center/cover no-repeat;
+}
+
+.hero__bg img{
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border: 0;
+  border-radius: 0;
 }
 .hero__overlay{
   position: absolute;
