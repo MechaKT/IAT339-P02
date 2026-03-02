@@ -15,3 +15,6 @@
 
 # V0.6
 # Added about me page, made minor tweaks to some headings
+
+# V0.8
+# Revamped pages for optimization and styling, added home page and increased fidelity of about pages. Updated content and fixed minor bugs.
