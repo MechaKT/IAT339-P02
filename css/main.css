@@ -132,6 +132,13 @@ a{
   text-decoration: none;
   color: var(--paper);
 }
+
+.brand:hover{
+  color: rgba(200,107,43,0.85);
+  transform: translateY(-1px);
+  transition: 0.2s;
+}
+
 .brand:focus-visible{
   outline: 3px solid rgba(200,107,43,0.35);
   outline-offset: 4px;
@@ -192,10 +199,12 @@ a{
   border-color: rgba(200,107,43,0.85);
   background: rgba(200,107,43,0.16);
 }
-.nav__link--cta{
+
+/* Unused, experimentative testing on nav link color */
+/* .nav__link--cta{
   border-color: rgba(200,107,43,0.55);
   background: rgba(200,107,43,0.10);
-}
+} */
 
 /* Typography Helpers */
 .h1{
