@@ -18,3 +18,9 @@
 
 # V0.8
 # Revamped pages for optimization and styling, added home page and increased fidelity of about pages. Updated content and fixed minor bugs.
+
+# V0.9
+# Added more pages for other content, removed certain elements and reworded some text.
+
+# V1.0
+# Finalized content, changed and included more links and completed citations.
